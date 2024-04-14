@@ -1,0 +1,159 @@
+@charset "utf-8";
+
+html{
+    font-size: 100%;
+}
+
+body{
+    background-color: #F7FFF7;
+}
+
+/* ヘッダー
+ーーーーーーーーーーーーーー */
+header{
+    width: 100%;
+    height: 50px;
+    /* background-color: #f5f5f5; */
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+.header-nav{
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    padding-top: 2px;
+}
+li{
+    margin-right: 100px;
+}
+li a{
+    position: relative;
+    margin: 40px 0;
+    text-decoration: none;
+    transition: 0.3s;
+    color: #292F36;
+}
+li a:hover{
+    color: #292F36;
+}
+li a::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 2px;
+    background: #292F36;
+    transition: 0.3s;
+}
+li a:hover::before{
+    width: 100%
+}
+
+/* メイン
+ーーーーーーーーーーーーーー */
+.main-visual{
+    width: 100%;
+    height: 700px;
+    background-color: #4ECDC4;
+}
+
+.page-title{
+    text-align: center;
+    margin: 20px auto 40px;
+}
+
+
+/* ニュース
+ーーーーーーーーーーーーーー */
+.news-content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #292F36;
+    margin:0 120px 20px;
+}
+
+/* ブログ
+ーーーーーーーーーーーーーー */
+.box{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 120px;
+    margin-bottom: 20px;
+}
+.blog-box{
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px;
+}
+
+.blog-text{
+    margin-top: 10px;
+    text-align: center;
+}
+
+.blog-img{
+    width: 300px;
+    height: 300px;
+    background-color: #4ECDC4;
+    border-radius: 8px;
+}
+
+
+/* About
+ーーーーーーーーーーーーーー */
+.about-content1{
+    display: flex;
+    margin: 0 120px 40px;
+    padding: 10px 50px;
+    border: 2px solid #4ECDC4;
+}
+.about-content2{
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 0 120px 40px;
+    padding: 10px 50px;
+    border: 2px solid #4ECDC4;
+}
+.about-img{
+    width: 300px;
+    height: 300px;
+    background-color: #4ECDC4;
+    border-radius: 50%;
+}
+
+
+/* moreボタン
+ーーーーーーーーーーーーーー */
+.align-center{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.btn{
+    display: inline-block;
+    font-size: 15px;
+    background-color: #aaa;
+    color: #292F36;
+    border-radius: 16px;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition:0.5s;
+}
+.btn:hover{
+    background-color: #292F36;
+    color: white;
+}
+
+/* フッター
+ーーーーーーーーーーーーーー */
+.copyright{
+    background-color: #4ECDC4;
+    color: #292F36;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 6rem;
+}
