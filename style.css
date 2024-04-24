@@ -56,7 +56,7 @@ li a:hover::before{
 ーーーーーーーーーーーーーー */
 .main-visual{
     width: 100%;
-    height: 800px;
+    height: 100vh;
     background-color: #4ECDC4;
 }
 
@@ -83,7 +83,7 @@ li a:hover::before{
 .box{
     display: flex;
     justify-content: space-between;
-    margin: 0 120px;
+    margin: 0 auto;
     margin-bottom: 40px;
 }
 .blog-box{
@@ -110,7 +110,8 @@ li a:hover::before{
 ーーーーーーーーーーーーーー */
 .about-content{
     display: flex;
-    margin: 0 21.5rem;
+    margin: 0 auto;
+    width: 800px;
 }
 .about-flex{
     margin-right: 10rem;
